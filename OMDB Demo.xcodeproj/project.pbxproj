@@ -14,6 +14,11 @@
 		2A8E76691C10D15F0091A225 /* OMDB_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76681C10D15F0091A225 /* OMDB_DemoTests.swift */; };
 		2A8E76741C10D15F0091A225 /* OMDB_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76731C10D15F0091A225 /* OMDB_DemoUITests.swift */; };
 		2A8E76821C10DB910091A225 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76811C10DB910091A225 /* MovieTableViewCell.swift */; };
+		2A8E76841C10E02E0091A225 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76831C10E02E0091A225 /* Movie.swift */; };
+		2A8E76861C10E1010091A225 /* OMDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76851C10E1010091A225 /* OMDBClient.swift */; };
+		2A8E76881C10E73C0091A225 /* OMDBClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76871C10E73C0091A225 /* OMDBClientTest.swift */; };
+		2A8E76891C10EB430091A225 /* OMDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76851C10E1010091A225 /* OMDBClient.swift */; };
+		2A8E768A1C10EB640091A225 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76831C10E02E0091A225 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,9 @@
 		2A8E76731C10D15F0091A225 /* OMDB_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDB_DemoUITests.swift; sourceTree = "<group>"; };
 		2A8E76751C10D15F0091A225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A8E76811C10DB910091A225 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		2A8E76831C10E02E0091A225 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2A8E76851C10E1010091A225 /* OMDBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBClient.swift; sourceTree = "<group>"; };
+		2A8E76871C10E73C0091A225 /* OMDBClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBClientTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,9 @@
 				2A8E76531C10D15F0091A225 /* AppDelegate.swift */,
 				2A8E76571C10D15F0091A225 /* Main.storyboard */,
 				2A8E76811C10DB910091A225 /* MovieTableViewCell.swift */,
+				2A8E76831C10E02E0091A225 /* Movie.swift */,
+				2A8E76851C10E1010091A225 /* OMDBClient.swift */,
+				2A8E76871C10E73C0091A225 /* OMDBClientTest.swift */,
 				2A8E765A1C10D15F0091A225 /* Assets.xcassets */,
 				2A8E765C1C10D15F0091A225 /* LaunchScreen.storyboard */,
 				2A8E765F1C10D15F0091A225 /* Info.plist */,
@@ -256,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8E76861C10E1010091A225 /* OMDBClient.swift in Sources */,
 				2A8E76821C10DB910091A225 /* MovieTableViewCell.swift in Sources */,
 				2A8E76541C10D15F0091A225 /* AppDelegate.swift in Sources */,
+				2A8E76841C10E02E0091A225 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8E76881C10E73C0091A225 /* OMDBClientTest.swift in Sources */,
+				2A8E76891C10EB430091A225 /* OMDBClient.swift in Sources */,
+				2A8E768A1C10EB640091A225 /* Movie.swift in Sources */,
 				2A8E76691C10D15F0091A225 /* OMDB_DemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

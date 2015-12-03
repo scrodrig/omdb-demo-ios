@@ -10,9 +10,13 @@ import Foundation
 
 class OMDBClient {
     
-    static func searchMovieBy(query:String, completionHandler: ([Movie]?, NSError?) -> Void) -> Void {
+    static func searchMovieBy(query:String?, completionHandler: ([Movie]?, NSError?) -> Void) -> Void {
 
-        guard let url = NSURL(string: "http://www.omdbapi.com/?s=" + query) else{
+        guard var queryString = query else {
+            return;
+        }
+        queryString = queryString.stringByReplacingOccurrencesOfString(" ", withString: "+")
+        guard let url = NSURL(string: "http://www.omdbapi.com/?s=" + queryString) else{
             return;
         }
         

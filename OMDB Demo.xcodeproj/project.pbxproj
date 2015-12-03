@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A812BCA1C10F5CB0004E06D /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A812BC91C10F5CB0004E06D /* MovieTableViewController.swift */; };
 		2A8E76541C10D15F0091A225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76531C10D15F0091A225 /* AppDelegate.swift */; };
 		2A8E76591C10D15F0091A225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8E76571C10D15F0091A225 /* Main.storyboard */; };
 		2A8E765B1C10D15F0091A225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8E765A1C10D15F0091A225 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A812BC91C10F5CB0004E06D /* MovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		2A8E76501C10D15F0091A225 /* OMDB Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OMDB Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8E76531C10D15F0091A225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A8E76581C10D15F0091A225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				2A8E76531C10D15F0091A225 /* AppDelegate.swift */,
 				2A8E76571C10D15F0091A225 /* Main.storyboard */,
+				2A812BC91C10F5CB0004E06D /* MovieTableViewController.swift */,
 				2A8E76811C10DB910091A225 /* MovieTableViewCell.swift */,
 				2A8E76831C10E02E0091A225 /* Movie.swift */,
 				2A8E76851C10E1010091A225 /* OMDBClient.swift */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A812BCA1C10F5CB0004E06D /* MovieTableViewController.swift in Sources */,
 				2A8E76861C10E1010091A225 /* OMDBClient.swift in Sources */,
 				2A8E76821C10DB910091A225 /* MovieTableViewCell.swift in Sources */,
 				2A8E76541C10D15F0091A225 /* AppDelegate.swift in Sources */,
@@ -500,6 +504,7 @@
 				2A8E767A1C10D15F0091A225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A8E767B1C10D15F0091A225 /* Build configuration list for PBXNativeTarget "OMDB DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +513,7 @@
 				2A8E767D1C10D15F0091A225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A8E767E1C10D15F0091A225 /* Build configuration list for PBXNativeTarget "OMDB DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +522,7 @@
 				2A8E76801C10D15F0091A225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -15,17 +17,65 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QkS-7g-27u">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="100" id="QkS-7g-27u" userLabel="movieCell" customClass="MovieTableViewCell" customModule="OMDB_Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QkS-7g-27u" id="UT5-YT-M4s">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIu-We-dEv">
+                                            <rect key="frame" x="8" y="8.5" width="83.5" height="83.5"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="FIu-We-dEv" secondAttribute="height" multiplier="1:1" id="Db9-lq-Cad"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR9-2R-jvC">
+                                            <rect key="frame" x="111.5" y="8" width="167.5" height="24"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAA-Er-01D">
+                                            <rect key="frame" x="111" y="52" width="30.5" height="18"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w40-KY-8LN">
+                                            <rect key="frame" x="167" y="52" width="33.5" height="18"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <animations/>
+                                    <constraints>
+                                        <constraint firstItem="w40-KY-8LN" firstAttribute="leading" secondItem="SAA-Er-01D" secondAttribute="trailing" constant="25" id="5Ym-61-6nb"/>
+                                        <constraint firstItem="AR9-2R-jvC" firstAttribute="leading" secondItem="FIu-We-dEv" secondAttribute="trailing" constant="20" id="6xF-2h-LXO"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="AR9-2R-jvC" secondAttribute="trailing" id="CGA-z6-5iM"/>
+                                        <constraint firstItem="FIu-We-dEv" firstAttribute="top" secondItem="UT5-YT-M4s" secondAttribute="topMargin" id="E7o-4T-hlf"/>
+                                        <constraint firstItem="SAA-Er-01D" firstAttribute="top" secondItem="AR9-2R-jvC" secondAttribute="bottom" constant="20" id="eAP-dw-4YC"/>
+                                        <constraint firstItem="FIu-We-dEv" firstAttribute="leading" secondItem="UT5-YT-M4s" secondAttribute="leadingMargin" id="lse-u4-878"/>
+                                        <constraint firstItem="SAA-Er-01D" firstAttribute="leading" secondItem="AR9-2R-jvC" secondAttribute="leading" id="mB5-72-ubk"/>
+                                        <constraint firstItem="w40-KY-8LN" firstAttribute="baseline" secondItem="SAA-Er-01D" secondAttribute="baseline" id="tk4-1w-hKs"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="FIu-We-dEv" secondAttribute="bottom" id="vIY-Ga-W8a"/>
+                                        <constraint firstItem="AR9-2R-jvC" firstAttribute="top" secondItem="FIu-We-dEv" secondAttribute="top" id="xYH-fX-cQV"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="poster" destination="FIu-We-dEv" id="uwb-is-gd8"/>
+                                    <outlet property="titleLabel" destination="AR9-2R-jvC" id="Sfb-i3-PdV"/>
+                                    <outlet property="typeLabel" destination="w40-KY-8LN" id="Vqs-eH-UGp"/>
+                                    <outlet property="yearLabel" destination="SAA-Er-01D" id="X2b-nc-p3B"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="UPC-IJ-rNF" id="txV-nE-ta3"/>
                             <outlet property="delegate" destination="UPC-IJ-rNF" id="QJU-NN-8XW"/>

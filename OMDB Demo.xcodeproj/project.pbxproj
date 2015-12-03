@@ -13,6 +13,7 @@
 		2A8E765E1C10D15F0091A225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8E765C1C10D15F0091A225 /* LaunchScreen.storyboard */; };
 		2A8E76691C10D15F0091A225 /* OMDB_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76681C10D15F0091A225 /* OMDB_DemoTests.swift */; };
 		2A8E76741C10D15F0091A225 /* OMDB_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76731C10D15F0091A225 /* OMDB_DemoUITests.swift */; };
+		2A8E76821C10DB910091A225 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E76811C10DB910091A225 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		2A8E766F1C10D15F0091A225 /* OMDB DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OMDB DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8E76731C10D15F0091A225 /* OMDB_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDB_DemoUITests.swift; sourceTree = "<group>"; };
 		2A8E76751C10D15F0091A225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8E76811C10DB910091A225 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				2A8E76531C10D15F0091A225 /* AppDelegate.swift */,
 				2A8E76571C10D15F0091A225 /* Main.storyboard */,
+				2A8E76811C10DB910091A225 /* MovieTableViewCell.swift */,
 				2A8E765A1C10D15F0091A225 /* Assets.xcassets */,
 				2A8E765C1C10D15F0091A225 /* LaunchScreen.storyboard */,
 				2A8E765F1C10D15F0091A225 /* Info.plist */,
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8E76821C10DB910091A225 /* MovieTableViewCell.swift in Sources */,
 				2A8E76541C10D15F0091A225 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

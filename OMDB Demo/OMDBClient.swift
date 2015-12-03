@@ -10,10 +10,18 @@ import Foundation
 
 class OMDBClient {
     
-    static func searchMovieBy(query:String) -> [Movie]? {
-        let data = NSData();
-        let movies = parseMovies(data);
-        return movies;
+    static func searchMovieBy(query:String, completionHandler: ([Movie]?, NSError?) -> Void) -> Void {
+
+        guard let url = NSURL(string: "http://www.omdbapi.com/?s=" + query) else{
+            return;
+        }
+        
+        let session = NSURLSession.sharedSession();
+        let sessionTask = session.dataTaskWithURL(url) { (data, response, error) -> Void in
+            let movies = parseMovies(data);
+            completionHandler(movies, error);
+        }
+        sessionTask.resume();
     }
     
     static func parseMovies(data:NSData?) -> [Movie]?{

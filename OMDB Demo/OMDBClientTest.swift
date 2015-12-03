@@ -35,6 +35,21 @@ class OMDBClientTest: XCTestCase {
         XCTAssertEqual(movies!.count, 10);
     }
     
+    func testSearchMovieBy(){
+        let query = "Happy";
+        let expectation = expectationWithDescription("going to fetch movies")
+        OMDBClient.searchMovieBy(query) { (movies, error) -> Void in
+            XCTAssertNotNil(movies);
+            XCTAssertNil(error);
+            XCTAssertEqual(movies!.count, 10);
+            expectation.fulfill();
+        }
+        
+        waitForExpectationsWithTimeout(5) {(error) -> Void in
+            XCTAssertNil(error);
+        }
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
